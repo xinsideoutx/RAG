@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+  <title>RAG JS s1mple - Chatx</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="app">
+    <section class="chat-card" aria-label="RAG Chat">
+      <header class="chat-header">
+        <div class="brand">
+          <div class="dot" aria-hidden="true"><span></span></div>
+          <h1>RAG JS s1mple</h1>
+        </div>
+        <div class="header-right">
+          <div class="status" id="status">...</div>
+          <div class="chat-actions">
+            <button id="historyBtn" type="button" class="chat-btn ghost" aria-label="History">History</button>
+            <button id="clearBtn" type="button" class="chat-btn danger" aria-label="Clear chat">Clear</button>
+          </div>
+        </div>
+      </header>
+
+      <div class="messages" id="messages" aria-live="polite"></div>
+
+      <form class="composer" id="composer" autocomplete="off">
+        <input
+          id="messageInput"
+          name="message"
+          type="text"
+          inputmode="text"
+          placeholder="Type a message and press Enter"
+          aria-label="Message"
+          maxlength="2000"
+          required
+        />
+        <button id="sendBtn" class="send" type="submit" aria-label="Send">
+          <span>Send</span>
+        </button>
+      </form>
+
+      <footer class="note">
+        <small>RAG note placeholder</small>
+      </footer>
+    </section>
+  </main>
+
+  <noscript>
+    Please enable JavaScript to use the chat.
+  </noscript>
+</body>
+</html>
+
+
